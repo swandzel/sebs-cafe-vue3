@@ -1,0 +1,58 @@
+@import "../../base";
+
+footer {
+  display: flex;
+  background-color: $secondary;
+  color: $primary;
+  height: 250px;
+  min-width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+footer > div {
+  border-right: 1px $tertiary solid;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+footer h2 {
+  padding-bottom: 1rem;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials-links i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0rem;
+    min-height: 500px;
+  }
+
+  footer > div {
+    border-right: 0px;
+    text-align: center;
+    padding-right: 0rem;
+  }
+
+  .location,
+  .hours,
+  .socials,
+  .contact {
+    padding-bottom: 1rem;
+  }
+}
