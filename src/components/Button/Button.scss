@@ -1,0 +1,26 @@
+@import "../../base";
+
+button {
+  background-color: $accent;
+  color: $primary;
+  font-size: 1.5rem;
+  border: 0px;
+  padding: 0.75rem 0.75rem;
+  margin-top: 1rem;
+  transition: $anim;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent-hover;
+    box-shadow: -1px 6px 33px -7px rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: -1px 6px 33px -7px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: -1px 6px 33px -7px rgba(0, 0, 0, 0.57);
+  }
+}
+
+@media (max-width: 1200px) {
+  button {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,29 @@
+@import "../../base";
+
+.our-coffee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  padding: 2rem 0rem 4rem 0rem;
+  width: 100%;
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: 300px;
+    min-width: 300px;
+    background: url("../../assets/images/our-coffee.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+  }
+}

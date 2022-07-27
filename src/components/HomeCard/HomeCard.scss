@@ -1,0 +1,64 @@
+@import "../../base";
+
+.home-cards {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  min-width: 300px;
+  transition: $anim;
+
+  &--container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 1rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  &-caffe {
+    background: url("../../assets/images/caffe.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-barists {
+    background: url("../../assets/images/barists.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-atmosphere {
+    background: url("../../assets/images/atmosphere.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2,
+  p {
+    text-shadow: 5px 14px 6px rgba(0, 0, 0, 0.8);
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+}

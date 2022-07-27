@@ -1,21 +1,43 @@
 @import "../../base";
 
-nav {
+.nav {
   display: flex;
   flex-direction: row;
-  position: fixed;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
-}
+  height: 5rem;
+  position: fixed;
 
-ul {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
+  &--link {
+    text-decoration: none;
+    color: $primary;
+    position: relative;
 
-  li {
-    margin: 0 1rem;
-    font-size: 1.2rem;
-    font-weight: 700;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      border-bottom: 2px solid $primary;
+      transition: $anim;
+      transform: translate3d(0, 5px, 0);
+    }
+
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+
+    li {
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
   }
 }

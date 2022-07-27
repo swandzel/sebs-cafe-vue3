@@ -1,0 +1,75 @@
+@import "../../base";
+
+.current-promo {
+  background-color: $white;
+
+  &--container {
+    display: flex;
+    justify-content: center;
+    background-color: $white;
+    padding-bottom: 2rem;
+  }
+
+  &--promo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 300px;
+    width: 100%;
+    background: url("../../assets/images/promo1.jpg");
+    background-position: center;
+    background-size: cover;
+
+    &-info {
+      padding: 0rem 5rem;
+
+      h2 {
+        font-size: 3rem;
+        text-shadow: 5px 4px 6px rgba(0, 0, 0, 0.8);
+      }
+
+      h3 {
+        font-weight: 200;
+        font-size: 2.5rem;
+        text-shadow: 5px 4px 6px rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}
+
+// @media (max-width: 1208px) {
+//   .promo-info {
+//     padding: 0rem 2.5rem;
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .promo {
+//     min-height: 40vh;
+//     min-width: 300px;
+//     min-height: 300px;
+//     background: url("../../assets/images/promo1.jpg");
+//     background-position: center;
+//     background-size: cover;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .promo-info {
+//     padding: 0rem 2rem;
+//   }
+
+//   .promo-info h2 {
+//     font-size: 2rem;
+//   }
+
+//   .promo-info h3 {
+//     font-size: 1.5rem;
+//   }
+// }
+
+// @media (max-width: 400px) {
+//   .promo-info h2 {
+//     font-size: 1.75rem;
+//   }
+// }

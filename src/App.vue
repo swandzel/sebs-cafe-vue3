@@ -9,7 +9,7 @@
 import Navbar from "./components/Navbar/Navbar.vue";
 import Header from "./components/Header/Header.vue";
 import Footer from "./components/Footer/Footer.vue";
-import "./app.css";
+import "./App.scss";
 
 console.log("hello script setup");
 </script>
