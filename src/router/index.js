@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home/Home.vue";
 import AboutUs from "../views/AboutUs/AboutUs.vue";
 import OurMenu from "../views/OurMenu/OurMenu.vue";
+import BookATable from "../views/BookATable/BookATable.vue";
+import Contact from "../views/Contact/Contact.vue";
 
 const routes = [
   {
@@ -18,6 +20,16 @@ const routes = [
     path: "/our-menu",
     name: "OurMenu",
     component: OurMenu,
+  },
+  {
+    path: "/book-a-table",
+    name: "BookATable",
+    component: BookATable,
+  },
+  {
+    path: "/contact",
+    name: "Contact",
+    component: Contact,
   },
 ];
 const router = createRouter({

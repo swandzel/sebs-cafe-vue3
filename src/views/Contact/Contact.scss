@@ -1,0 +1,99 @@
+@import "../../base";
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  min-width: 300px;
+  min-height: 300px;
+
+  &--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 50rem;
+    background-color: $secondary;
+    margin-bottom: 4rem;
+    color: $white;
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      min-height: 400px;
+      flex: 1;
+      text-align: center;
+      padding: 0rem 1rem;
+    }
+
+    &--photo {
+      flex: 1;
+      height: 50rem;
+      min-width: 300px;
+      min-height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &--detail {
+      padding-bottom: 1rem;
+
+      p:nth-child(1) {
+        font-weight: 700;
+        font-size: 3rem;
+      }
+
+      p:nth-child(2) {
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+// @media (max-width: 1000px) {
+//   .kontakt-container {
+//     flex-direction: column;
+//     margin-bottom: 4rem;
+//   }
+
+//   .kontakt-photo {
+//     order: 1;
+//     flex: 1;
+//     height: 50rem;
+//     width: 100%;
+//   }
+
+//   .kontakt-info {
+//     order: 2;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     flex: 1;
+//     text-align: center;
+//     padding: 5rem 0rem;
+//   }
+
+//   .kontakt-detail p:nth-child(1) {
+//     font-size: 2.25rem;
+//   }
+
+//   .kontakt-detail p:nth-child(2) {
+//     font-size: 1.75rem;
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   .kontakt-detail p:nth-child(1) {
+//     font-size: 2rem;
+//   }
+
+//   .kontakt-detail p:nth-child(2) {
+//     font-size: 1.25rem;
+//   }
+// }

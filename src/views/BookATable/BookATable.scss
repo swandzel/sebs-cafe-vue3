@@ -1,0 +1,49 @@
+@import "../../base";
+
+.book-a-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  min-width: 300px;
+  min-height: 300px;
+
+  &--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    min-height: 30rem;
+    margin-bottom: 4rem;
+    color: $white;
+    background: url("../../assets/images/zarezerwuj-1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    text-shadow: 5px 4px 36px rgba(0, 0, 0, 1);
+  }
+
+  p {
+    text-shadow: 5px 4px 36px rgba(0, 0, 0, 1);
+    font-size: 3.5rem;
+
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+// @media (max-width: 768px) {
+//   .zarezerwuj-container p:nth-child(1) {
+//     font-size: 2.5rem;
+//     padding-bottom: 0.5rem;
+//     text-shadow: 5px 4px 36px rgba(0, 0, 0, 1);
+//   }
+// }
