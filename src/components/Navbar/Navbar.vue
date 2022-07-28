@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav v-motion-slide-top class="nav">
     <div class="nav--logo"></div>
     <ul>
       <li v-for="link in navlinks" :key="link.id">

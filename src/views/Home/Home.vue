@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section v-motion-fade class="home">
     <div class="home--container">
       <h2 class="h2-main">Aktualne promocje</h2>
       <CurrentPromo />
