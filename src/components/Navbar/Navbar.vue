@@ -1,9 +1,5 @@
 <template>
-  <nav
-    v-motion-slide-top
-    class="nav"
-    :class="{ 'nav--fixed': !changeNavStyle }"
-  >
+  <nav v-motion-slide-top class="nav" :class="{ 'nav--fixed': changeNavStyle }">
     <div class="nav--logo"></div>
     <ul>
       <li v-for="link in navlinks" :key="link.id">
