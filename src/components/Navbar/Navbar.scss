@@ -7,9 +7,9 @@
   align-items: center;
   width: 100%;
   height: 5rem;
-  position: fixed;
-  background: $white;
   z-index: 10;
+  position: absolute;
+  transition: $anim;
 
   &--link {
     text-decoration: none;
@@ -32,6 +32,10 @@
     }
   }
 
+  &--logo {
+    color: black;
+  }
+
   ul {
     list-style: none;
     display: flex;
@@ -41,5 +45,10 @@
       font-size: 1.2rem;
       font-weight: 700;
     }
+  }
+
+  &--fixed {
+    position: fixed;
+    background-color: $secondary;
   }
 }

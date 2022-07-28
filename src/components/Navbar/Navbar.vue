@@ -1,5 +1,9 @@
 <template>
-  <nav v-motion-slide-top class="nav">
+  <nav
+    v-motion-slide-top
+    class="nav"
+    :class="{ 'nav--fixed': !changeNavStyle }"
+  >
     <div class="nav--logo"></div>
     <ul>
       <li v-for="link in navlinks" :key="link.id">
@@ -14,4 +18,8 @@
 <script setup>
 import "./Navbar.scss";
 import { navlinks } from "@/variables/nav-links";
+
+defineProps({
+  changeNavStyle: Boolean,
+});
 </script>
