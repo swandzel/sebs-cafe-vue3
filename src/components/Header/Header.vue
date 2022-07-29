@@ -1,39 +1,31 @@
 <template>
-  <header class="header" v-motion-fade>
-    <!-- <div class="header--layer">
-      <div v-motion-fade class="header--title">Seb's Cafe</div>
-      <div v-motion-fade class="header--cta">best coffee in town</div>
-    </div> -->
+  <header class="header">
     <div class="header--layer">
-      <div
-        v-for="(slide, index) in slides"
-        class="header--carousel-item"
-        :key="index"
-      >
-        <Transition name="slide-in" mode="out-in">
-          <img v-show="currentSlide === index" :src="slide" />
-        </Transition>
-      </div>
       <div v-motion-fade class="header--title">Seb's Cafe</div>
       <div v-motion-fade class="header--cta">best coffee in town</div>
     </div>
+    <carousel
+      :items-to-show="1"
+      autoplay="4000"
+      wrapAround
+      :mouseDrag="false"
+      :touchDrag="false"
+    >
+      <slide v-for="slide in slides" :key="slide">
+        <img :src="slide" />
+      </slide>
+      <template #addons>
+        <pagination />
+      </template>
+    </carousel>
   </header>
 </template>
 
 <script setup>
 import "./Header.scss";
-import { ref, onMounted } from "vue";
 
-const currentSlide = ref(0);
-
-onMounted(() => {
-  setInterval(() => {
-    const index =
-      currentSlide.value < slides.length - 1 ? currentSlide.value + 1 : 0;
-    currentSlide.value = index;
-    console.log(currentSlide.value);
-  }, 4000);
-});
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination } from "vue3-carousel";
 
 const slides = [
   require("../../assets/images/headers/header-home.jpg"),

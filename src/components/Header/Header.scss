@@ -2,13 +2,24 @@
 
 .header {
   height: 700px;
+  width: 100%;
   // width: 100vw;
   // background-image: url("./../../assets/images/headers/header-home.jpg");
   // background-position: center center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+
+  img {
+    // width: 100vw;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    // background-size: contain;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+  }
 
   &--title {
     font-family: "Lobster", cursive;
@@ -28,8 +39,8 @@
     background-color: $overlay;
     width: 100%;
     height: 100%;
-    opacity: 0.9;
     position: absolute;
+    z-index: 5;
   }
 
   &--carousel-item {
@@ -38,31 +49,26 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
 
-    img {
-      width: 100vw;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
+  .carousel {
+    height: 100%;
+
+    &__pagination {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 6;
+
+      &-button {
+        background-color: $tertiary !important;
+        border-radius: 100%;
+
+        &--active {
+          background-color: $white !important;
+        }
+      }
     }
-  }
-
-  .slide-in-enter-active,
-  .slide-in-leave-active,
-  .slide-out-enter-active,
-  .slide-out-leave-active {
-    transition: all 1s ease-in-out;
-  }
-  .slide-in-enter-from {
-    transform: translateX(-100vw);
-  }
-  .slide-in-leave-to {
-    transform: translateX(100vw);
-  }
-  .slide-out-enter-from {
-    transform: translateX(100vw);
-  }
-  .slide-out-leave-to {
-    transform: translateX(-100vw);
   }
 }
