@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $white;
 
   &--container {
     display: flex;
@@ -38,7 +37,6 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    background-color: $white;
     min-height: 30rem;
 
     &-first {

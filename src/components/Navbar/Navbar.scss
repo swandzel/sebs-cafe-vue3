@@ -7,13 +7,17 @@
   align-items: center;
   width: 100%;
   height: 5rem;
-  z-index: 10;
+  z-index: 6;
   position: fixed;
   transition: $anim;
 
-  &--link {
+  &--link,
+  a {
     text-decoration: none;
     color: $primary;
+  }
+
+  &--link {
     position: relative;
 
     &:after {
@@ -33,7 +37,24 @@
   }
 
   &--logo {
-    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: $primary;
+    font-size: 0.75rem;
+
+    img {
+      height: 35px;
+      margin-right: 10px;
+      color: white;
+      filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(32deg)
+        brightness(104%) contrast(103%);
+    }
+
+    p {
+      font-family: "Lobster", cursive;
+      font-size: 1.5rem;
+    }
   }
 
   ul {

@@ -6,7 +6,7 @@
     </div>
     <carousel
       :items-to-show="1"
-      autoplay="4000"
+      :autoplay="4000"
       wrapAround
       :mouseDrag="false"
       :touchDrag="false"
