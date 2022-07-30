@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #f3f4ed;
+  background-image: url("./assets/images/bean-bg.png");
+  background-color: #ffffff;
+}
+
+.h2-main {
+  font-family: "Lobster", cursive;
+  color: #424642;
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem;
+}
