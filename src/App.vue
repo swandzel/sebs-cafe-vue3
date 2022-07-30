@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar/Navbar.vue";
 import Header from "./components/Header/Header.vue";
 import Footer from "./components/Footer/Footer.vue";
 import Modal from "./components/Modal/Modal.vue";
-import "./App.scss";
+import "@/App.scss";
 import { ref } from "vue";
 const showModal = ref(false);
 
