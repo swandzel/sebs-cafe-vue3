@@ -16,7 +16,6 @@
           <img
             src="../../assets/images/mobile-app.jpg"
             alt="Download our App"
-            v-motion-fade-visible
           />
         </div>
       </div>
