@@ -12,22 +12,22 @@ const routes = [
     component: Home,
   },
   {
-    path: "/about-us",
+    path: "/o-nas",
     name: "AboutUs",
     component: AboutUs,
   },
   {
-    path: "/our-menu",
+    path: "/nasze-menu",
     name: "OurMenu",
     component: OurMenu,
   },
   {
-    path: "/book-a-table",
+    path: "/zarezerwuj",
     name: "BookATable",
     component: BookATable,
   },
   {
-    path: "/contact",
+    path: "/kontakt",
     name: "Contact",
     component: Contact,
   },

@@ -15,7 +15,7 @@
         <div class="modal--content-right">
           <img
             src="../../assets/images/mobile-app.jpg"
-            alt="Download our App"
+            alt="Pobierz naszą appkę"
           />
         </div>
       </div>
