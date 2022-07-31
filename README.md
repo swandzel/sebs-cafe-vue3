@@ -3,7 +3,7 @@
 ### Check out this project online
 
 ```
-SOON
+https://sebs-cafe.netlify.app/
 ```
 
 ### Install dependencies || run project on localhost
