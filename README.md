@@ -6,14 +6,8 @@
 SOON
 ```
 
-### Project setup
+### Install dependencies || run project on localhost
 
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
+npm install || npm run serve
 ```
