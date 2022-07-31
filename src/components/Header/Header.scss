@@ -54,6 +54,11 @@
   .carousel {
     height: 100%;
 
+    &__track,
+    &__viewport {
+      height: 100%;
+    }
+
     &__pagination {
       position: absolute;
       bottom: 50px;
