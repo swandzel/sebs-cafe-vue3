@@ -8,6 +8,14 @@
   padding-bottom: 4rem;
   border-bottom: 0.4rem $secondary dotted;
 
+  @media (max-width: 1200px) {
+    width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+
   &--photo {
     height: 10rem;
     margin-bottom: 2rem;
@@ -31,6 +39,14 @@
     p {
       font-size: 2rem;
       font-weight: 700;
+
+      @media (max-width: 450px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 330px) {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -38,6 +54,14 @@
     p {
       font-size: 2rem;
       font-weight: 700;
+
+      @media (max-width: 450px) {
+        font-size: 1.5rem;
+      }
+
+      @media (max-width: 330px) {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -51,27 +75,3 @@
     }
   }
 }
-
-// @media (max-width: 1200px) {
-//   .sekcja-produktów {
-//     width: 70%;
-//   }
-// }
-
-// @media (max-width: 768px) {
-//   .sekcja-produktów {
-//     width: 80%;
-//   }
-// }
-
-// @media (max-width: 450px) {
-//   p {
-//     font-size: 1.5rem;
-//   }
-// }
-
-// @media (max-width: 330px) {
-//   p {
-//     font-size: 1.25rem;
-//   }
-// }

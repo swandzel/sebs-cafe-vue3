@@ -1,10 +1,12 @@
-.loading {
+@import "../../base";
+
+.loader {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #424642;
+  color: $secondary;
   font-family: "Lobster", cursive;
   font-size: 2.5rem;
   font-weight: 700;
@@ -13,20 +15,24 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
 
-.spinner {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-  background: conic-gradient(#0000 10%, #424642);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
-  animation: spinner-zp9dbg 1s infinite linear;
-}
+  &--spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background: conic-gradient(#0000 10%, $secondary);
+    -webkit-mask: radial-gradient(
+      farthest-side,
+      #0000 calc(100% - 9px),
+      #000 0
+    );
+    animation: spinner-zp9dbg 1s infinite linear;
+  }
 
-@keyframes spinner-zp9dbg {
-  to {
-    transform: rotate(1turn);
+  @keyframes spinner-zp9dbg {
+    to {
+      transform: rotate(1turn);
+    }
   }
 }

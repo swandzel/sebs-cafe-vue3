@@ -25,9 +25,6 @@ import "./App.css";
 import { onMounted, ref } from "vue";
 const showModal = ref(false);
 
-const closeModal = () => {
-  showModal.value = false;
-};
 const changeNavStyle = ref(false);
 const showLoader = ref(true);
 
@@ -36,6 +33,10 @@ onMounted(() => {
     showLoader.value = false;
   }, 1000);
 });
+
+const closeModal = () => {
+  showModal.value = false;
+};
 
 const MouseOut = (event) => {
   if (

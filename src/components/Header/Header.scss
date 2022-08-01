@@ -3,32 +3,46 @@
 .header {
   height: 700px;
   width: 100%;
-  // width: 100vw;
-  // background-image: url("./../../assets/images/headers/header-home.jpg");
-  // background-position: center center;
+  min-width: 330px;
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
 
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+
   img {
-    // width: 100vw;
     height: 100%;
     width: 100%;
     object-fit: cover;
-    // background-size: contain;
-    // background-position: center center;
-    // background-repeat: no-repeat;
   }
 
   &--title {
     font-family: "Lobster", cursive;
     font-size: 12rem;
     font-weight: 700;
+
+    @media (max-width: 900px) {
+      font-size: 21vw;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 80px;
+    }
   }
 
   &--cta {
     font-size: 2.25rem;
+
+    @media (max-width: 768px) {
+      font-size: 4vw;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 20px;
+    }
   }
 
   &--layer {

@@ -15,6 +15,7 @@
     align-items: center;
     width: 80%;
     min-height: 30rem;
+    min-width: 300px;
     margin-bottom: 4rem;
     color: $white;
     background: url("../../assets/images/zarezerwuj-1.jpg");
@@ -27,22 +28,26 @@
     font-weight: 700;
     padding-bottom: 1rem;
     text-shadow: 5px 4px 36px rgba(0, 0, 0, 1);
+    text-align: center;
+    margin: 0 16px;
+
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+      padding-bottom: 0.5rem;
+    }
   }
 
   p {
     text-shadow: 5px 4px 36px rgba(0, 0, 0, 1);
     font-size: 3.5rem;
+    text-align: center;
+
+    @media (max-width: 550px) {
+      font-size: 2rem;
+    }
 
     i {
       padding-right: 0.5rem;
     }
   }
 }
-
-// @media (max-width: 768px) {
-//   .zarezerwuj-container p:nth-child(1) {
-//     font-size: 2.5rem;
-//     padding-bottom: 0.5rem;
-//     text-shadow: 5px 4px 36px rgba(0, 0, 0, 1);
-//   }
-// }

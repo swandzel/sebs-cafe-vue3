@@ -1,6 +1,6 @@
 <template>
-  <div class="loading">
-    <div class="spinner"></div>
+  <div class="loader">
+    <div class="loader--spinner"></div>
     Seb's Cafe
   </div>
 </template>

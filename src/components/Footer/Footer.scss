@@ -11,14 +11,31 @@
   max-width: 1920px;
   padding: 2rem 5rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 0rem;
+    min-height: 400px;
+  }
+
   > div {
     border-right: 1px $tertiary solid;
     padding-right: 1rem;
     text-align: right;
+
+    @media (max-width: 768px) {
+      border-right: 0px;
+      text-align: center;
+      padding-right: 0rem;
+    }
   }
 
   h2 {
     padding-bottom: 1rem;
+
+    @media (max-width: 1000px) {
+      font-size: 16px;
+    }
   }
 
   p {
@@ -35,26 +52,13 @@
       height: 32px;
     }
   }
+
+  .location,
+  .hours,
+  .socials,
+  .contact {
+    @media (max-width: 768px) {
+      padding-bottom: 1rem;
+    }
+  }
 }
-
-// @media (max-width: 768px) {
-//   footer {
-//     flex-direction: column;
-//     justify-content: center;
-//     padding: 2rem 0rem;
-//     min-height: 500px;
-//   }
-
-//   footer > div {
-//     border-right: 0px;
-//     text-align: center;
-//     padding-right: 0rem;
-//   }
-
-//   .location,
-//   .hours,
-//   .socials,
-//   .contact {
-//     padding-bottom: 1rem;
-//   }
-// }

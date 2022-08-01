@@ -32,7 +32,7 @@
         </p>
       </div>
     </div>
-    <div class="about-us--container">
+    <div class="about-us--container about-us--container-second">
       <div class="about-us--about about-us--about-second">
         <p>
           Nasza kawiarnia to miejsce spotkań pasjonatów kawy, którzy cenią sobie

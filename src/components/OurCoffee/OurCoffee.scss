@@ -26,5 +26,16 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
     padding: 0rem 2rem;
+    text-align: center;
+
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 0rem;
+      padding: 0rem 1rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1.75rem;
+    }
   }
 }
