@@ -4,7 +4,7 @@
     <div class="about-us--container">
       <div class="about-us--photos about-us--photos-first">
         <img
-          v-motion-slide-visible-once-left
+          v-motion-pop-visible-once
           src="../../assets/images/coffee-plantation.jpg"
           alt="Plantacja kawy"
         />
@@ -56,7 +56,7 @@
       </div>
       <div class="about-us--photos about-us--photos-second">
         <img
-          v-motion-slide-visible-once-right
+          v-motion-slide-visible-once-left
           src="../../assets/images/inside-sebs.jpg"
           alt="Wnętrza Seb's Cafe"
         />

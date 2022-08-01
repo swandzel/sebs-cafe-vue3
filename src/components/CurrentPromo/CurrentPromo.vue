@@ -1,5 +1,5 @@
 <template>
-  <section v-motion-slide-visible-once-left class="current-promo">
+  <section v-motion-pop-visible-once class="current-promo">
     <div class="current-promo--container">
       <div class="current-promo--promo">
         <div class="current-promo--promo-info">

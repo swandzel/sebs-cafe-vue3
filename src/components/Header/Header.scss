@@ -54,6 +54,10 @@
   .carousel {
     height: 100%;
 
+    &__slide {
+      height: 700px;
+    }
+
     &__track,
     &__viewport {
       height: 100%;
