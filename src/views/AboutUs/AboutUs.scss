@@ -28,6 +28,10 @@
     min-height: 500px;
     width: 100%;
 
+    @media (max-width: 1200px) {
+      min-height: 230px;
+    }
+
     &-first {
       margin-right: 2.5rem;
 

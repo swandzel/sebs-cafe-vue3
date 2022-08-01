@@ -3,13 +3,14 @@
 .modal {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: flex-start;
   position: fixed;
   top: 0;
   background-color: $overlay;
   width: 100%;
   height: 100%;
   transition: all 0.2s ease-out;
+  max-width: 1920px;
 
   &--container {
     width: 700px;
