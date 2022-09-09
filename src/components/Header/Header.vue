@@ -28,11 +28,11 @@ import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Pagination } from "vue3-carousel";
 
 const slides = [
-  require("../../assets/images/headers/header-home.jpg"),
-  require("../../assets/images/headers/header-kontakt.jpg"),
-  require("../../assets/images/headers/header-naszekawy.jpg"),
-  require("../../assets/images/headers/header-naszemenu.jpg"),
-  require("../../assets/images/headers/header-onas.jpg"),
-  require("../../assets/images/headers/header-zarezerwuj.jpg"),
+  require("../../assets/images/headers/header-home.webp"),
+  require("../../assets/images/headers/header-kontakt.webp"),
+  require("../../assets/images/headers/header-naszekawy.webp"),
+  require("../../assets/images/headers/header-naszemenu.webp"),
+  require("../../assets/images/headers/header-onas.webp"),
+  require("../../assets/images/headers/header-zarezerwuj.webp"),
 ];
 </script>
