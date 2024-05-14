@@ -10,10 +10,10 @@
   "dependencies": {
     "@vueuse/motion": "^2.0.0-beta.12",
     "core-js": "^3.8.3",
-    "sass": "^1.54.0",
+    "sass": "^1.77.1",
     "vue": "^3.2.13",
     "vue-router": "^4.1.2",
-    "vue3-carousel": "^0.1.40"
+    "vue3-carousel": "^0.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -23,8 +23,7 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "node-sass": "^7.0.1",
-    "sass-loader": "^13.0.2"
+    "sass-loader": "^14.2.1"
   },
   "eslintConfig": {
     "root": true,

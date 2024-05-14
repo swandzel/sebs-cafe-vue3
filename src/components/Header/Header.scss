@@ -83,10 +83,17 @@
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 6;
+      gap: 12px;
 
       &-button {
         background-color: $tertiary !important;
         border-radius: 100%;
+        width: 20px;
+        height: 20px;
+
+        &::after {
+          display: none;
+        }
 
         &--active {
           background-color: $white !important;
